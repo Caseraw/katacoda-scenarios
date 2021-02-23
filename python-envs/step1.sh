@@ -1,5 +1,3 @@
-echo "Preparing the working area, please be patient."
-
 apt-get install -y ruby figlet &> /dev/null &&\
 mkdir ~/lolcat &&\
 wget -P ~/lolcat https://github.com/busyloop/lolcat/archive/master.zip &> /dev/null &&\
