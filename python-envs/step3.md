@@ -8,7 +8,7 @@ Quick and easy installer to get you starting.
 
 Make sure to meet the requirements as stated on: https://github.com/pyenv/pyenv/wiki/Common-build-problems#prerequisites
 
-For this excersice we will be needing the Ubuntu prerequisites:
+For this exercise we will be needing the Ubuntu prerequisites:
 
 `apt-get install -y build-essential libssl-dev libedit-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
