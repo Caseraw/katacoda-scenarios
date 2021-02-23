@@ -4,6 +4,14 @@ Quick and easy installer to get you starting.
 
 > https://github.com/pyenv/pyenv-installer
 
+The installer comes with a predefined set of helpful plugins to get you started, for example:
+
+- pyenv-doctor
+- pyenv-installer
+- pyenv-update
+- pyenv-virtualenv
+- pyenv-which-ext
+
 ## Perquisites
 
 Make sure to meet the requirements as stated on: https://github.com/pyenv/pyenv/wiki/Common-build-problems#prerequisites
@@ -36,12 +44,3 @@ For this exercise we will be needing the Ubuntu prerequisites:
 
 `exec $SHELL`{{ execute }}
 
-# Other plugins
-
-The installer comes with a predefined set of helpful plugins to get you started, for example:
-
-- pyenv-doctor
-- pyenv-installer
-- pyenv-update
-- pyenv-virtualenv
-- pyenv-which-ext
