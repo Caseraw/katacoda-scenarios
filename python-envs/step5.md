@@ -24,7 +24,7 @@ Create a virtual environment to isolate the python environment.
 
 `pyenv local MySpecialEnv_py_3.9.2`{{ execute }}
 
-> Notice the shell prompt change into `(MySpecialEnv_py_3.9.2) $`. _This means that the environment is activated. Remember this whenever you are working with virtual environments._
+> Notice the shell prompt changed into `(MySpecialEnv_py_3.9.2) $`. This means that the environment is activated. Remember this whenever you are working with virtual environments.
 
 **List the contents of the directory**
 
@@ -43,6 +43,7 @@ Create a virtual environment to isolate the python environment.
 `python --version`{{ execute }}
 
 > Notice that all three outputs show which python is pointed to and in use in the activated virtual environment.
+> If the `python --version` is incorrect and not according to the virtual environment. Restart the shell by running `exec $SHELL`.
 
 **Deactivate an list again**
 
