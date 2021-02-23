@@ -10,7 +10,7 @@ Make sure to meet the requirements as stated on: https://github.com/pyenv/pyenv/
 
 For this exercise we will be needing the Ubuntu prerequisites:
 
-`apt-get install -y build-essential libssl-dev libedit-dev zlib1g-dev libbz2-dev \
+`apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
 xz-utils tk-dev libffi-dev liblzma-dev python-openssl git`{{ execute }}
 

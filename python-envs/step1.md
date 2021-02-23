@@ -21,4 +21,5 @@ _pyenv lets you easily switch between multiple versions of Python. It's simple, 
 # What is the current system python version?
 
 `which python`{{ execute }}
+
 `python --version`{{ execute }}
