@@ -1,6 +1,6 @@
 {
   "title": "pyenv and venv",
-  "description": "Setting up python environments to work on multiple python projects.",
+  "description": "Setup for multiple python projects and environments",
   "difficulty": "Beginner",
   "time": "30 minutes",
   "details": {
