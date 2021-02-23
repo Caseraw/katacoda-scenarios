@@ -24,17 +24,13 @@ For this exercise we will be needing the Ubuntu prerequisites:
 
 **Add to your `.bashrc`**
 
-`
-cat <<EOT >> ~/.bashrc
+`echo -e 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc`{{ execute }}
 
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+`echo -e 'eval "$(pyenv init -)"' >> ~/.bashrc`{{ execute }}
 
-EOT
-`{{ execute }}
+`echo -e 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc`{{ execute }}
 
-`vi ~/.bashrc`{{ execute }}
+`tail -3 ~/.bashrc`{{ execute }}
 
 **Restart SHELL**
 
