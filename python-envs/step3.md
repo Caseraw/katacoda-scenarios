@@ -26,7 +26,6 @@ For this exercise we will be needing the Ubuntu prerequisites:
 
 `
 cat <<EOT >> ~/.bashrc
-# pyenv section
 
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
