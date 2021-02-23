@@ -17,3 +17,8 @@ _pyenv lets you easily switch between multiple versions of Python. It's simple, 
 - Depend on the system Python.
 - Entangled installation.
 - Manage virtualenv.
+
+# What is the current system python version?
+
+`which python`{{ execute }}
+`python --version`{{ execute }}
