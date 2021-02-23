@@ -8,15 +8,23 @@ Explore the pyenv command to see what it provides.
 
 `pyenv versions`{{ execute }}
 
+> Notice that only the system python is available.
+
 **Python executable path**
 
 `pyenv which python`{{ execute }}
 
-**Consult the help section of the install command**
+**List the current active python version**
 
-`pyenv install --help`{{ execute }}
+`python --version`{{ execute }}
+
+> Notice what version the system python is on.
 
 # Install a python version
+
+**Consult the help section for the install command**
+
+`pyenv install --help`{{ execute }}
 
 **List all available python versions**
 
@@ -26,12 +34,16 @@ Explore the pyenv command to see what it provides.
 
 `pyenv install 3.9.2`{{ execute }}
 
-> This can take a couple of minutes...
+> This can take a significant amount of minutes...
 
 **List all current python versions**
 
 `pyenv versions`{{ execute }}
 
-**List the current python**
+> Notice the additional installed version below the system python.
+
+**List the current active python version**
 
 `python --version`{{ execute }}
+
+> Notice that the system python has not changed yet.

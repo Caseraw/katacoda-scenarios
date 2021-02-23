@@ -2,7 +2,7 @@
   "title": "pyenv and venv",
   "description": "Working with multiple python environments",
   "difficulty": "Beginner",
-  "time": "60 minutes",
+  "time": "30 minutes",
   "details": {
     "steps": [
       {
@@ -11,7 +11,7 @@
         "code": "step1.sh"
       },
       {
-        "title": "Isolated environments",
+        "title": "Virtual environments",
         "text": "step2.md"
       },
       {
@@ -23,11 +23,11 @@
         "text": "step4.md"
       },
       {
-        "title": "Virtual environment",
+        "title": "The virtual environment",
         "text": "step5.md"
       },
       {
-        "title": "Python project",
+        "title": "A python project",
         "text": "step6.md"
       }
       

@@ -10,6 +10,8 @@ Create a virtual environment to isolate the python environment.
 
 `pyenv virtualenv 3.9.2 MySpecialEnv_py_3.9.2`{{ execute }}
 
+> Notice the location (path) of where the virtual environment is placed.
+
 **Create a directory to house contents for the virtual environment**
 
 `mkdir -p ~/PythonGarden/MySpecialEnv_py_3.9.2`{{ execute }}
@@ -40,7 +42,7 @@ Create a virtual environment to isolate the python environment.
 
 `python --version`{{ execute }}
 
-> Notice that all three outputs show which python version is in pointed to and in use in the activated virtual environment.
+> Notice that all three outputs show which python is pointed to and in use in the activated virtual environment.
 
 **Deactivate an list again**
 
