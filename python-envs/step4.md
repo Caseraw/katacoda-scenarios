@@ -32,7 +32,7 @@ Explore the pyenv command to see what it provides.
 
 **Install version 3.9.2**
 
-`pyenv install 3.9.2`{{ execute }}
+`pyenv install -v 3.9.2`{{ execute }}
 
 > This can take a significant amount of minutes...
 
