@@ -1,17 +1,12 @@
 Each python environment caries it's own dependencies and requirements. Separating each environment by isolating them, will provide the flexibility to work on multiple projects without conflicts and contradictions.
 
-Use **virtualenv** or **venv** to isolate python environments.
-
-- **Python 2.7 and lower**
-    - https://virtualenv.pypa.io/en/latest/
-- **Python 3 and higher**
-    - https://docs.python.org/3/library/venv.html
+> **[virtualenv](https://virtualenv.pypa.io/en/latest/)** when dealing with python 2.7 and lower. **[venv](https://docs.python.org/3/library/venv.html)** when dealing with python 3 and higher.
 
 # Helpful pyenv plugin
 
-The **pyenv-virtualenv** helps out to integrate the additional creation and activation of virtual environments.
-
 _pyenv-virtualenv is a pyenv plugin that provides features to manage virtualenvs and conda environments for Python on UNIX-like systems._
+
+The **pyenv-virtualenv** helps out to integrate the additional creation and activation of virtual environments. The plugin will deal with whether to use _virtualenv_ or _venv_ so you don't have to.
 
 > https://github.com/pyenv/pyenv-virtualenv
 

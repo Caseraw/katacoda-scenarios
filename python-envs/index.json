@@ -21,6 +21,10 @@
       {
         "title": "Explore pyenv",
         "text": "step4.md"
+      },
+      {
+        "title": "Virtual environment",
+        "text": "step5.md"
       }
     ],
     "intro": {

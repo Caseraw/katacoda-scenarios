@@ -12,11 +12,9 @@ The installer comes with a predefined set of helpful plugins to get you started,
 
 # Prerequisites
 
-Make sure to meet the requirements on the Operating System level.
+Make sure to meet the requirements on the Operating System level. In this exercise we will be needing the Ubuntu prerequisites.
 
 > https://github.com/pyenv/pyenv/wiki/Common-build-problems#prerequisites
-
-In this exercise we will be needing the Ubuntu prerequisites:
 
 **Ensure system is updated**
 
