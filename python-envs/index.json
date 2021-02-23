@@ -1,5 +1,4 @@
 {
-  // "noindex": true,
   "title": "Pyenv and venv",
   "description": "Setting up python environments to work on multiple python projects.",
   "difficulty": "Beginner",
@@ -27,8 +26,6 @@
     }
   },
   "environment": {
-    // "hideintro": true,
-    // "hidefinish": true,
     "uilayout": "terminal"
   },
   "backend": {
