@@ -16,7 +16,7 @@ For this exercise we will be needing the Ubuntu prerequisites:
 
 `apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl git`{{ execute }}
 
-## Install pyenv
+## Install pyenv with pyenv-installer
 
 **Install**
 
@@ -24,19 +24,22 @@ For this exercise we will be needing the Ubuntu prerequisites:
 
 **Add to your `.bashrc`**
 
-```shell
+`
+cat <<EOT >> ~/.bashrc
+# pyenv section
+
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-```
 
-`cat add_to_bashrc >> ~/.bashrc`{{ execute }}
+EOT
+`{{ execute }}
+
+`vi ~/.bashrc`{{ execute }}
 
 **Restart SHELL**
 
 `exec $SHELL`{{ execute }}
-
-
 
 # Other plugins
 
