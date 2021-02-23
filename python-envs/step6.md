@@ -20,7 +20,7 @@ It's time to start working on a simple project.
 
 `pip --version`{{ execute }}
 
-**Upgrade pip and install setup-tools**
+**Upgrade pip and install setuptools**
 
 `pip install --upgrade pip setuptools`{{ execute }}
 
