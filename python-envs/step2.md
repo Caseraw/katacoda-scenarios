@@ -16,4 +16,4 @@ The **pyenv-virtualenv** helps out to integrate the additional creation and acti
 
 `pip freeze | wc -l`{{ execute }}
 
-_Imagine having to install and uninstall these for every single project, every single time when changing between projects. Can you handle the impact and all the side effects it will cause?_ 🤔
+> Imagine having to install and uninstall these for every single project, every single time when changing between projects. Can you handle the impact and all the side effects it will cause? 🤔

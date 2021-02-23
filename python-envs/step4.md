@@ -26,7 +26,7 @@ Explore the pyenv command to see what it provides.
 
 `pyenv install 3.9.2`{{ execute }}
 
-_This can take a couple of minutes..._
+> This can take a couple of minutes...
 
 **List all current python versions**
 

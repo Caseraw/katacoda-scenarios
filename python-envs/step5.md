@@ -4,7 +4,7 @@ Create a virtual environment to isolate the python environment.
 
 `pyenv virtualenvs`{{ execute }}
 
-_No output? In that case, there are no virtual environments that pyenv knows about._
+> No output? In that case, there are no virtual environments that pyenv knows about.
 
 **Create a virtual environment**
 
@@ -22,26 +22,34 @@ _No output? In that case, there are no virtual environments that pyenv knows abo
 
 `pyenv local MySpecialEnv_py_3.9.2`{{ execute }}
 
-_Notice the shell prompt change into `(MySpecialEnv_py_3.9.2) $`._  
-_This means that the environment is activated. Remember this whenever you are working with virtual environments._
+> Notice the shell prompt change into `(MySpecialEnv_py_3.9.2) $`. _This means that the environment is activated. Remember this whenever you are working with virtual environments._
 
-_Notice a file is created in the current directory called `.python-version`._  
-_This contains a string value pointing to the name of the virtual environment `MySpecialEnv_py_3.9.2`._  
-_This file causes the activation of the environment when changing into the directory automatically. Changing away from the directory will cause to environment to be deactivated._
+**List the contents of the directory**
 
-**List existing virtual environments, again**
+`ls -la`{{ execute }}
+
+`cat .python-version`{{ execute }}
+
+> Notice a file is created in the current directory called `.python-version`. This contains a string value pointing to the name of the virtual environment `MySpecialEnv_py_3.9.2`. This file causes the activation of the environment when changing into the directory automatically. Changing away from the directory will cause to environment to be deactivated.
+
+**List existing virtual environments and python versions, again**
 
 `pyenv virtualenvs`{{ execute }}
 
-# Create a project
+`pyenv versions`{{ execute }}
 
-It's time to start working on a project.
+`python --version`{{ execute }}
 
-**Create the project directory MyProject_01**
+> Notice that all three outputs show which python version is in pointed to and in use in the activated virtual environment.
 
-`mkdir -p ~/PythonGarden/MySpecialEnv_py_3.9.2/MyProject_01`{{ execute }}
+**Deactivate an list again**
 
-**Change into the project directory**
+`cd ~`{{ execute }}
 
-`cd ~/PythonGarden/MySpecialEnv_py_3.9.2/MyProject_01`{{ execute }}
+`pyenv virtualenvs`{{ execute }}
 
+`pyenv versions`{{ execute }}
+
+`python --version`{{ execute }}
+
+> Notice that the environment is deactivated and the system python is in use.

@@ -20,7 +20,7 @@ Make sure to meet the requirements on the Operating System level. In this exerci
 
 `apt-get update && apt-get upgrade -y && apt-get autoremove && apt-get autoclean`{{ execute }}
 
-_This can take a couple of minutes..._
+> This can take a couple of minutes...
 
 **Required packages**
 
