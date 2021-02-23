@@ -6,17 +6,21 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "What is pyenv?",
         "text": "step1.md",
         "code": "step1.sh"
       },
       {
-        "title": "Step 2",
+        "title": "Isolated environments",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "pyenv installer",
         "text": "step3.md"
+      },
+      {
+        "title": "Explore pyenv",
+        "text": "step4.md"
       }
     ],
     "intro": {

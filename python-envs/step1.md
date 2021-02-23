@@ -1,6 +1,4 @@
-# What is pyenv?
-
-**Simple Python Version Management**
+# Simple Python Version Management
 
 _pyenv lets you easily switch between multiple versions of Python. It's simple, unobtrusive, and follows the UNIX tradition of single-purpose tools that do one thing well._
 
