@@ -7,8 +7,7 @@
     "steps": [
       {
         "title": "Create CA",
-        "text": "step1.md",
-        "code": "step1.sh"
+        "text": "step1.md"
       },
       {
         "title": "Next...",

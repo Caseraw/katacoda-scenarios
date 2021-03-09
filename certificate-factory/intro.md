@@ -1,8 +1,9 @@
 **Certificate factory**
 
-Dealing with security and certificates is **no joke**, but i can be fun. So let's play around with it to get familiar.
+Dealing with security and certificates is **no joke**, but i can be fun.  
+So let's play around with it to get familiar.
 
-In this short scenario you will create a Private Certificate Authority which will be used to create and sign new certificates. Once set take the freedom to create scripts and other methods of automation to help maintain the certificate life-cycle.
+In this short scenario you will create a Private Certificate Authority which will be used to create and sign new certificates. Once set, take the freedom to create scripts and other methods of automation to help maintain the certificate life-cycle.
 
 Things you will learn going forward:
 
