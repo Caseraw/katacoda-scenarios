@@ -45,9 +45,9 @@ Ensure correct permissions.
 
 `openssl req -config intermediate/openssl.cnf -new -sha256 -key intermediate/private/intermediate.key.pem -passin pass:superintermediatepass -out intermediate/csr/intermediate.csr.pem -subj "/C=NL/ST=Noord Holland/L=Amsterdam /O=HCS Company/OU=IT Labz/CN=HCS Company Labz intermediate CA/emailAddress=admin@hcs-it-labz.com"`{{ execute }}
 
-**Create the intermediate CA certificate from the CSR**
+**Sign and generate the intermediate CA certificate from the CSR**
 
-`openssl ca -config openssl.cnf -extensions v3_intermediate_ca -days 3650 -notext -md sha256 -passin pass:superrootpass -in intermediate/csr/intermediate.csr.pem -out intermediate/certs/intermediate.cert.pem`{{ execute }}
+`openssl ca -batch -config openssl.cnf -extensions v3_intermediate_ca -days 3650 -notext -md sha256 -passin pass:superrootpass -in intermediate/csr/intermediate.csr.pem -out intermediate/certs/intermediate.cert.pem`{{ execute }}
 
 Ensure correct permissions.
 
