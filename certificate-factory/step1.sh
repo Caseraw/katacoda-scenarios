@@ -1,1 +1,2 @@
-mkdir ~/cert-playground; cd ~/cert-playground
+mkdir -p ~/cert-playground/CA &&\
+cd ~/cert-playground/CA
