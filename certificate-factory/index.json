@@ -14,6 +14,10 @@
         "title": "Create the intermediate CA",
         "text": "step2.md",
         "code": "step2.sh"
+      },
+      {
+        "title": "Create server certificates",
+        "text": "step3.md"
       }
     ],
     "intro": {
