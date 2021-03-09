@@ -1,0 +1,15 @@
+---
+- name: Check playbook
+  hosts: localhost
+  gather_facts: True
+  tasks:
+    - name: Get certificate information
+      community.crypto.x509_certificate_info:
+        path: /root/ca/intermediate/certs/site1.example.com.cert.pem
+      register: cert
+
+    - name: Days until cert expires
+      debug:
+        msg: "Expires in: {{ expire_days }} days."
+      vars:
+        expire_days: "{{ (( cert.not_after | to_datetime('%Y%m%d%H%M%SZ')) - (ansible_date_time.iso8601 | to_datetime('%Y-%m-%dT%H:%M:%SZ')) ).days }}"
