@@ -1,12 +1,10 @@
 It's time to bundle the certificates properly before shipping.
 
-> Bundling makes it easy to transfer certificates, certificate chains and private keys. It adds an extra layer of security and immutability.
+> Bundling makes it easy to transfer certificates, certificate chains and private keys. It adds an extra layer of security and immutability. Some applications may even require such a bundle in order to import and use the certificates.
 
 **Make a PKCS7 bundle for `www.example.com`**
 
 This bundle will contain the server certificate and the certificate chain. As these are all public it does not require a password to bundle.
-
-> Some applications may even require such a bundle in order to import and use the certificates.
 
 `openssl crl2pkcs7 -nocrl -certfile intermediate/certs/www.example.com.cert.pem -certfile intermediate/certs/ca-chain.cert.pem -out intermediate/certs/www.example.com.p7b`{{ execute }}
 

@@ -22,6 +22,11 @@
       {
         "title": "Bundle for shipping",
         "text": "step4.md"
+      },
+      {
+        "title": "Time to play",
+        "text": "step5.md",
+        "code": "step5.sh"
       }
     ],
     "intro": {
