@@ -30,4 +30,4 @@ This bundle will contain the server private key, server certificate and the cert
 
 **Unpack the PKCS12 bundle for `www.example.com`**
 
-`openssl pkcs12 -in intermediate/certs/www.example.com.pfx -nodes -out www.example.com.cer`{{ execute }}
+`openssl pkcs12 -in intermediate/certs/www.example.com.pfx -passin pass:superexamplesitepass -nodes -out intermediate/private/www.example.com.cer`{{ execute }}
