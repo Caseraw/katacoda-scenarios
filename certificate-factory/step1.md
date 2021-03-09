@@ -21,13 +21,11 @@ This is the base directory structure we will be using for this CA exercise.
 5 directories, 3 files
 ```
 
+# Create steps
+
 Get ready.
 
 `cd /root/ca`{{ execute }}
-
-> Be aware of the current working directory as the command parameters refer to specific paths based on your current location
-
-# Create steps
 
 Create the root CA key.
 
@@ -50,3 +48,7 @@ Create the root certificate.
 Enter password for the root CA private key.
 
 `superpass`{{ execute }}
+
+Verify the certificate.
+
+`openssl x509 -noout -text -in certs/ca.cert.pem`{{ execute }}

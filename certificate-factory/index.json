@@ -11,8 +11,9 @@
         "code": "step1.sh"
       },
       {
-        "title": "Next...",
-        "text": "step2.md"
+        "title": "Create the intermediate CA",
+        "text": "step2.md",
+        "code": "step2.sh"
       }
     ],
     "intro": {
