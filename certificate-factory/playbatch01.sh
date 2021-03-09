@@ -42,19 +42,19 @@ openssl ca -batch -config intermediate/openssl.cnf -extensions server_cert \
 -out intermediate/certs/site1.example.com.cert.pem
 
 openssl ca -batch -config intermediate/openssl.cnf -extensions server_cert \
--days 375 -notext -md sha256 \
+-days 28 -notext -md sha256 \
 -passin pass:superintermediatepass \
 -in intermediate/csr/site2.example.com.csr.pem \
 -out intermediate/certs/site2.example.com.cert.pem
 
 openssl ca -batch -config intermediate/openssl.cnf -extensions server_cert \
--days 375 -notext -md sha256 \
+-days 15 -notext -md sha256 \
 -passin pass:superintermediatepass \
 -in intermediate/csr/site3.example.com.csr.pem \
 -out intermediate/certs/site3.example.com.cert.pem
 
 openssl ca -batch -config intermediate/openssl.cnf -extensions server_cert \
--days 375 -notext -md sha256 \
+-days 7 -notext -md sha256 \
 -passin pass:superintermediatepass \
 -in intermediate/csr/site4.example.com.csr.pem \
 -out intermediate/certs/site4.example.com.cert.pem
@@ -63,4 +63,3 @@ openssl verify -CAfile intermediate/certs/ca-chain.cert.pem intermediate/certs/s
 openssl verify -CAfile intermediate/certs/ca-chain.cert.pem intermediate/certs/site2.example.com.cert.pem
 openssl verify -CAfile intermediate/certs/ca-chain.cert.pem intermediate/certs/site3.example.com.cert.pem
 openssl verify -CAfile intermediate/certs/ca-chain.cert.pem intermediate/certs/site4.example.com.cert.pem
-
