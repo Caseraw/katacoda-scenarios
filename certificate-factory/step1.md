@@ -29,13 +29,9 @@ Get ready.
 
 Create the root CA key.
 
-`openssl genrsa -aes256 -passout pass:superpass -out private/ca.key.pem 4096 `{{ execute }}
+`openssl genrsa -aes256 -passout pass:superrootpass -out private/ca.key.pem 4096 `{{ execute }}
 
-Enter password for the root CA private key (2x).
-
-`superpass`{{ execute }}
-
-`superpass`{{ execute }}
+> Take note that the password is `superrootpass` and passed as argument for ease of the exercise.
 
 Ensure correct permissions.
 
@@ -43,11 +39,7 @@ Ensure correct permissions.
 
 Create the root certificate.
 
-`openssl req -config openssl.cnf -key private/ca.key.pem -new -x509 -days 7300 -sha256 -extensions v3_ca -out certs/ca.cert.pem -subj "/C=NL/ST=Noord Holland/L=Amsterdam /O=HCS Company/OU=IT Labz/CN=HCS Company Labz root CA/emailAddress=admin@hcs-it-labz.com"`{{ execute }}
-
-Enter password for the root CA private key.
-
-`superpass`{{ execute }}
+`openssl req -config openssl.cnf -key private/ca.key.pem -new -x509 -days 7300 -sha256 -extensions v3_ca -passin pass:superpass -out certs/ca.cert.pem -subj "/C=NL/ST=Noord Holland/L=Amsterdam /O=HCS Company/OU=IT Labz/CN=HCS Company Labz root CA/emailAddress=admin@hcs-it-labz.com"`{{ execute }}
 
 Verify the certificate.
 

@@ -22,18 +22,13 @@ Get ready.
 
 Create the intermediate CA key.
 
-`openssl genrsa -aes256 -out intermediate/private/intermediate.key.pem 4096`{{ execute }}
+`openssl genrsa -aes256 -passout pass:superintermediatepass -out intermediate/private/intermediate.key.pem 4096`{{ execute }}
 
-Enter password for the root CA private key (2x).
-
-`superpass`{{ execute }}
-
-`superpass`{{ execute }}
+> Take note that the password is `superintermediatepass` and passed as argument for ease of the exercise.
 
 Ensure correct permissions.
 
 `chmod 400 intermediate/private/intermediate.key.pem`{{ execute }}
-
 
 Create a Certificate Signing Request (CSR) for the intermediate CA.
 
@@ -41,11 +36,7 @@ Create a Certificate Signing Request (CSR) for the intermediate CA.
 
 Create the intermediate CA certificate from the CSR.
 
-`openssl ca -config openssl.cnf -extensions v3_intermediate_ca -days 3650 -notext -md sha256 -in intermediate/csr/intermediate.csr.pem -out intermediate/certs/intermediate.cert.pem`{{ execute }}
-
-Enter password for the root CA private key.
-
-`superpass`{{ execute }}
+`openssl ca -config openssl.cnf -extensions v3_intermediate_ca -days 3650 -notext -md sha256 -passin pass:superrootpass -in intermediate/csr/intermediate.csr.pem -out intermediate/certs/intermediate.cert.pem`{{ execute }}
 
 Ensure correct permissions.
 
