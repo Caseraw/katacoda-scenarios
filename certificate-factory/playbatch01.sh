@@ -39,19 +39,19 @@ openssl req -config intermediate/openssl.cnf -new -sha256 \
 -subj "/C=NL/ST=Noord Holland/L=Amsterdam /O=HCS Company/OU=IT Labz/CN=site4.example.com CA/emailAddress=admin@hcs-it-labz.com"
 
 openssl ca -batch -config intermediate/openssl.cnf -extensions server_cert \
--days 375 -notext -md sha256 \
+-days 365 -notext -md sha256 \
 -passin pass:superintermediatepass \
 -in intermediate/csr/site1.example.com.csr.pem \
 -out intermediate/certs/site1.example.com.cert.pem
 
 openssl ca -batch -config intermediate/openssl.cnf -extensions server_cert \
--days 28 -notext -md sha256 \
+-days 182 -notext -md sha256 \
 -passin pass:superintermediatepass \
 -in intermediate/csr/site2.example.com.csr.pem \
 -out intermediate/certs/site2.example.com.cert.pem
 
 openssl ca -batch -config intermediate/openssl.cnf -extensions server_cert \
--days 15 -notext -md sha256 \
+-days 30 -notext -md sha256 \
 -passin pass:superintermediatepass \
 -in intermediate/csr/site3.example.com.csr.pem \
 -out intermediate/certs/site3.example.com.cert.pem
