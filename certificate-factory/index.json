@@ -18,6 +18,10 @@
       {
         "title": "Create server certificates",
         "text": "step3.md"
+      },
+      {
+        "title": "Bundle for shipping",
+        "text": "step4.md"
       }
     ],
     "intro": {

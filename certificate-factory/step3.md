@@ -23,4 +23,3 @@ Verify the certificate.
 `openssl x509 -noout -text -in intermediate/certs/www.example.com.cert.pem`{{ execute }}
 
 `openssl verify -CAfile intermediate/certs/ca-chain.cert.pem intermediate/certs/www.example.com.cert.pem`{{ execute }}
-
