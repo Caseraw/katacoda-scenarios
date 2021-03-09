@@ -1,17 +1,28 @@
-This is the directory structure we will be using for this intermediate CA exercise.
+The directory structure is evolving with new additions. This is the directory structure we will be starting with for this intermediate CA exercise.
 
 ```shell
-/root
-└── ca
-    ├── certs
-    ├── crl
-    ├── index.txt
-    ├── newcerts
-    ├── openssl.cnf
-    ├── private
-    └── serial
+/root/ca
+├── certs
+│   └── ca.cert.pem
+├── crl
+├── index.txt
+├── intermediate
+│   ├── certs
+│   ├── crl
+│   ├── crlnumber
+│   ├── csr
+│   ├── index.txt
+│   ├── newcerts
+│   ├── openssl.cnf
+│   ├── private
+│   └── serial
+├── newcerts
+├── openssl.cnf
+├── private
+│   └── ca.key.pem
+└── serial
 
-5 directories, 3 files
+10 directories, 9 files
 ```
 
 # Create steps
@@ -32,7 +43,7 @@ Ensure correct permissions.
 
 **Create a Certificate Signing Request (CSR) for the intermediate CA**
 
-`openssl req -config intermediate/openssl.cnf -new -sha256 -key intermediate/private/intermediate.key.pem -out intermediate/csr/intermediate.csr.pem -subj "/C=NL/ST=Noord Holland/L=Amsterdam /O=HCS Company/OU=IT Labz/CN=HCS Company Labz intermediate CA/emailAddress=admin@hcs-it-labz.com"`{{ execute }}
+`openssl req -config intermediate/openssl.cnf -new -sha256 -key intermediate/private/intermediate.key.pem -passin pass:superintermediatepass -out intermediate/csr/intermediate.csr.pem -subj "/C=NL/ST=Noord Holland/L=Amsterdam /O=HCS Company/OU=IT Labz/CN=HCS Company Labz intermediate CA/emailAddress=admin@hcs-it-labz.com"`{{ execute }}
 
 **Create the intermediate CA certificate from the CSR**
 
