@@ -31,3 +31,11 @@ This bundle will contain the server private key, server certificate and the cert
 **Unpack the PKCS12 bundle for `www.example.com`**
 
 `openssl pkcs12 -in intermediate/certs/www.example.com.pfx -passin pass:superexamplesitepass -nodes -out intermediate/private/www.example.com.cer`{{ execute }}
+
+Verify the certificate.
+
+`openssl x509 -noout -text -in intermediate/private/www.example.com.cer`{{ execute }}
+
+`cat intermediate/private/www.example.com.cer`{{ execute }}
+
+> Notice that only a single file is put out containing the certificate chain and the server private key. Starting from the bottom with the server private key, followed by the root CA, followed up with the intermediate CA and finally followed up by the server certificate. This is the chain of trust that has been built.
