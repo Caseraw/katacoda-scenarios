@@ -14,13 +14,15 @@ Things you will learn going forward:
 - Convert and bundle certificates.
 - Create certificate life-cycle maintenance methods.
 
-Resources:
+# Disclaimer
+
+This scenario is for **practice only**.  
+**Do not use these exact examples for production use-cases.**
+
+# Resources
 
 - https://youtu.be/eM7l8wXarHI
 - https://open.spotify.com/episode/638vkxv3bwXDaDhmvvay9M?si=e5mQZirQTOC8tXvQIYKMYQ
-- https://www.digitalocean.com/community/tutorials/openssl-essentials-working-with-ssl-certificates-private-keys-and-csrs
-- https://gist.github.com/Soarez/9688998
-- https://deliciousbrains.com/ssl-certificate-authority-for-local-https-development/
 - https://jamielinux.com/docs/openssl-certificate-authority/index.html
 
 # Share and spread the knowledge
