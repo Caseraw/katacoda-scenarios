@@ -29,7 +29,7 @@ Get ready.
 
 **Create the root CA key**
 
-`openssl genrsa -aes256 -passout pass:superrootpass -out private/ca.key.pem 4096 `{{ execute }}
+`openssl genrsa -aes256 -passout pass:superrootpass -out private/ca.key.pem 4096`{{ execute }}
 
 > Take note that the password is `superrootpass` and passed as argument for ease of the exercise.
 
